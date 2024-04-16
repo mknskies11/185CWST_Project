@@ -13,8 +13,19 @@
     font-size: 1.25rem;
 
 }
+.login-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
 
-
+.login-button:hover {
+    background-color: #63666a;
+}
 .nav-link {
     color: #787976;
     font-weight: 500;
@@ -207,20 +218,13 @@ ul{
 }
 .footer-col .social-links a{
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
     margin:0 10px 10px 0;
     text-align: center;
-    line-height: 60px;
     font-size: 20px;
-    border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
+    color: #63666a;
 }
-
 
