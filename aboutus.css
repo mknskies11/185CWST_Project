@@ -1,0 +1,60 @@
+body{
+    background: #000000;
+    align-items: center;
+}
+
+/*About Us card section*/
+.aboutus-section{
+    position: relative;
+
+}
+.about-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    object-position: center;
+}
+.about-bg img{
+    width: 100%;
+}
+.about-container{
+    position: relative;
+    top: 450px;
+}
+.about-data{
+    text-align: center;
+    color: #ffffff;
+}
+.about-subtitle{
+    margin-bottom: 0.5px;
+    font-family: Poppins;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.about-title{
+    margin-bottom: 1rem;
+    font-family: Dream Avenue;
+    font-size: 105px;
+}
+.about-description{
+    margin-bottom: 2rem;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap: 0.1px;
+}
+.about-content img{
+    width: 90%;
+    border-radius: 10%;
+}
+.about-content img:hover{
+    transform: scale(1.1);
+}
+
