@@ -6,6 +6,8 @@
 body{
     background: #000000;
 }
+
+
 /*navbar CSS begins here*/
 .navbar{
     background-color: #ffffff;
@@ -219,6 +221,7 @@ body{
     }
 }
 
+
 /*GOING BLACK BANNER CSS*/
 .goingblack-banner{
     position: relative;
@@ -364,6 +367,7 @@ body{
     height: 100%;
 }
 
+
 /*About Us Insight*/
 .aboutus-insight{
     margin-left: 40px;
@@ -371,6 +375,7 @@ body{
     text-align: center;
     color: #ffffff;
 }
+
 
 /*footer begins*/
 .container{
@@ -440,20 +445,3 @@ ul{
 .footer-col .social-links a:hover{
     color: #63666a;
 }
-
-
-
-@media screen and (max-width: 600px){
-    .body-background{
-        background-image: url(Images/rose2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-    .bwbridal-banner img{
-        width: 100%;
-        height: 20%;
-    }
-
-}
-
