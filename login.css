@@ -77,6 +77,8 @@
     color: #ffffff;
     border-radius: 17px;
     padding: 30px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 .wrapper h1{
@@ -156,6 +158,18 @@
 }
 .register-link p a:hover{
     text-decoration: underline;
+}
+
+
+/*Contact Us Body*/
+.contactus-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Images/contactback.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 

@@ -159,7 +159,6 @@ body{
 .body-background{
     width: 100%;
     height: 122.8vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     position: relative;
     padding: 0 10%;
     display: flex;
@@ -207,19 +206,7 @@ body{
     bottom: 0;
     z-index: -1;
 }
-@media (min-aspect-ratio:16/9){
-    .back-video{
-        width: 100%;
-        height: auto;
-        background-image: url(Images/rose1.jpg);
-    }
-}
-@media (max-aspect-ratio:16/9){
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
-}
+
 
 
 /*GOING BLACK BANNER CSS*/
@@ -377,7 +364,198 @@ body{
 }
 
 
-/*footer begins*/
+
+
+/*------------------------------COLLECTIONS PAGE------------------------------*/
+/*Collection Header Video*/
+.collectionheader-background{
+    width: 100%;
+    height: 122.8vh;
+    position: relative;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.collection-content{
+    text-align: center;
+}
+.collection-content h1{
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: Dream Avenue;
+    font-size: 50px;
+}
+.collection-content h1:hover{
+    color: #63666a;
+    transform: translateY(-10px);
+}
+.collection-content a{
+    background: #ffffff;
+    color: #1c1c1c;
+    text-decoration: none;
+    padding: 9px 29px;
+    font-family: Poppins;
+    margin-top: 10px;
+}
+.collection-content a:hover{
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+.category-heading{
+    text-align: center;
+    margin-top: 60px;
+}
+.category-heading{
+    color: #ffffff;
+    font-family: Poppins;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.category-heading span{
+    color: #787976;
+}
+.collection-categories{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Collections Categories Container CSS*/
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 0.7rem;
+    margin-top: 2rem;
+}
+.categories-container .category-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 130px;
+}
+.categories-container .category-box img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.categories-container .category-box img:hover{
+    transform: translateY(-10px);
+    transition: 0.8s;
+}
+.categories-container .category-box h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+}
+.categories-container .category-box span{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+.categories-container .category-box i{
+    padding: 10px;
+    font-size: 20px;
+    background: #fff;
+    color: #000000;
+    border-radius: 50px;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8%
+}
+.categories-container .category-box i:hover{
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+/*Mademoseille collection CSS*/
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.collection-container .collection-box{
+    padding: 20px;
+    position: relative;
+    margin-bottom: 130px;
+}
+.collection-container .collection-box img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+    object-position: center;
+}
+.collection-container .collection-box img:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+/*------------------------------PRODUCTS PAGE------------------------------*/
+.newarrivals-heading{
+    margin-left: 60px;
+    margin-top: 270px;
+    color: #787976;
+    font-family: Dream Avenue;
+}
+.newarrivals-heading h2 span{
+    color: #ffffff;
+    font-family: Dream Avenue;
+}
+.newarrivals-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    background: #ffffff;
+}
+.newarrivals-container .product-box{
+    padding: 20px;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.newarrivals-container .product-box img{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: contain;
+    object-position: center;
+} 
+.newarrivals-container .product-box img:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+} 
+.newarrivals-container .product-box h5{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.newarrivals-container .product-box .price{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.newarrivals-container .product-box .bxs-shopping-bag-alt{
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
+.newarrivals-container .product-box .bxs-shopping-bag-alt:hover{
+    background: #63666a;
+    color: #1c1c1c;
+}
+
+/*------------------------------FOOTER------------------------------*/
 .container{
     max-width: 1170px;
     margin: auto;
@@ -444,4 +622,21 @@ ul{
 }
 .footer-col .social-links a:hover{
     color: #63666a;
+}
+
+@media screen and (max-width: 1376px)
+{
+    .bwbridal-banner{
+        background: url(Images/bwbridal2.png);
+        background-repeat: no-repeat;
+    }
+    .bwbridal-banner .bridalbanner-text{
+        text-align: center;
+    }
+    .bwbridal-banner .bridalbanner-text a{
+        margin-top: -15px;
+    }
+    .ceobanner{
+        background: url(Images/ceobanner2.png);
+    }
 }
